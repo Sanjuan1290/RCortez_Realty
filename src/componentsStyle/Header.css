@@ -1,0 +1,162 @@
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 5px 20px;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.215);
+}
+
+header > a > img{
+    width: 100px;
+}
+
+header > .nav-window{
+    display: flex;
+    gap: 20px;
+}
+
+
+header > .nav-window > a{
+    position: relative;
+    font-size: 14px;
+    color: rgb(33, 28, 23);
+}
+header > .nav-window > a:hover{
+    color: rgb(75, 59, 37);
+}
+
+header > div{
+    display: flex;
+    gap: 10px;
+}
+header > div > a{
+    background-color: rgb(139, 110, 69);
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    transition: background-color .4s ease, color .4s ease;
+}
+header > div > a:hover{
+    background-color: rgb(235, 150, 24);
+    color: rgb(37, 37, 37);
+}
+
+header > .menuBtn{
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+}
+header > .menuBtn > img{
+    width: 30px;
+}
+
+
+/* Mobile */
+.nav-mobile-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform .4s ease;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+}
+.nav-mobile-container.show{
+    transform: translateX(0);
+    visibility: visible;
+}
+
+
+
+.nav-mobile-container > .nav-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    font-size: 15px;
+}
+
+
+.nav-mobile-container > .nav-mobile > a{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    transition: background-color .3s ease;
+
+}
+.nav-mobile-container > .nav-mobile > a:hover{
+    background-color: rgba(247, 149, 50, 0.293);
+}
+
+.nav-mobile-container > .nav-mobile > div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-mobile-container > .nav-mobile > div > .contact-login{
+    background-color: rgb(139, 110, 69);
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color .4s ease, color .4s ease;
+    width: 80px;
+    text-align: center;
+}
+
+.nav-mobile-container > .nav-mobile > div > .contact-login:hover{
+    background-color: rgb(235, 150, 24);
+    color: rgb(37, 37, 37);
+}
+.navActive::after{
+    content: '';
+    height: 2px;
+    
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: rgb(134, 134, 134);
+}
+
+
+.nav-mobile-container > button{
+    background-color: rgb(139, 110, 69);
+    color: white;
+    border: none;
+    height: 25px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color .4s ease, color .4s ease;
+}
+.nav-mobile-container > button:hover{
+    background-color: rgb(235, 150, 24);
+    color: rgb(37, 37, 37);
+}
