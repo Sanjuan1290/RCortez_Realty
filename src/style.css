@@ -1,6 +1,7 @@
 
 @import url('./componentsStyle/Header.css');
 @import url('./componentsStyle/Footer.css');
+@import url('./componentsStyle/Home.css');
 
 *{
     padding: 0;

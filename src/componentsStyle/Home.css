@@ -1,0 +1,16 @@
+
+.homepage{
+    position: relative;
+}
+
+
+.homepage > .top-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.homepage > .top-section > div > h1{
+    font-weight: 1000;
+    font-size: 30px;
+    color: wheat;
+}
