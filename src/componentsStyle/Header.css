@@ -6,10 +6,13 @@ header{
     
     width: 100%;
 
+    position: fixed;
+    top: 0;
+
     margin: 0 auto;
     padding: 5px 20px;
-    border-bottom: 1px solid rgba(111, 111, 111, 0.215);
-    background-color: white;
+    /* border-bottom: 1px solid rgba(111, 111, 111, 0.215); */
+    background-color: rgb(37, 58, 30);
 }
 
 header > a > img{
@@ -25,10 +28,10 @@ header > .nav-window{
 header > .nav-window > a{
     position: relative;
     font-size: 15px;
-    color: rgb(33, 28, 23);
+    color: rgb(242, 232, 216);
 }
 header > .nav-window > a:hover{
-    color: rgb(75, 59, 37);
+    color: rgb(188, 150, 98);
 }
 
 header > div{
@@ -38,7 +41,7 @@ header > div{
 header > div > a{
     background-color: rgb(139, 110, 69);
     color: white;
-    padding: 7px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     font-size: 14px;
     width: 80px;
